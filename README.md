@@ -6,7 +6,7 @@
 - Entity Framework core
 
 **Services**
-Clearbit Enrichment API
+- Clearbit Enrichment API
 
 
 **Remarks**
