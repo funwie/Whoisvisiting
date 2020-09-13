@@ -4,6 +4,8 @@
 - Asp.net core 3.1
 - SQL server 
 - Entity Framework core
+- Jqquery
+- Datatables
 
 **Services**
 - Clearbit Enrichment API
