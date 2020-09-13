@@ -1,0 +1,42 @@
+﻿@model Whoisvisiting.Domain.Entities.Contact
+
+<h4>Are you sure you want to delete this?</h4>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Domain)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Domain)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+    </dl>
+
+    <form class="d-none" asp-action="Delete" id="deleteContactForm">
+        <input type="hidden" asp-for="Id" />
+    </form>
+</div>
