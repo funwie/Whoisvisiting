@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace Whoisvisiting.ClearbitService.Models
+﻿namespace Whoisvisiting.ClearbitService.Models
 {
     public class Category
     {

@@ -64,7 +64,12 @@ namespace Whoisvisiting.ClearbitService
         {
             try
             {
-               return JsonSerializer.Deserialize<CombinedEnrichment>(enrichmentJson);
+                var options = new JsonSerializerOptions
+                {
+                    IgnoreNullValues = true,
+                    WriteIndented = true
+                };
+                return JsonSerializer.Deserialize<CombinedEnrichment>(enrichmentJson, options);
                 
             } 
             catch (JsonException ex)

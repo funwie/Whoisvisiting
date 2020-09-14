@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Whoisvisiting.ClearbitService.Models
 {
@@ -9,15 +8,15 @@ namespace Whoisvisiting.ClearbitService.Models
         public string name { get; set; }
         public string legalName { get; set; }
         public string domain { get; set; }
-        public List<object> domainAliases { get; set; }
+        public string[] domainAliases { get; set; }
         public Site site { get; set; }
         public Category category { get; set; }
-        public List<string> tags { get; set; }
+        public string[] tags { get; set; }
         public string description { get; set; }
-        public string foundedYear { get; set; }
+        //public int foundedYear { get; set; }
         public string location { get; set; }
         public string timeZone { get; set; }
-        public int utcOffset { get; set; }
+        //public int utcOffset { get; set; }
         public Geo geo { get; set; }
         public string logo { get; set; }
         public Facebook facebook { get; set; }
@@ -31,8 +30,8 @@ namespace Whoisvisiting.ClearbitService.Models
         public string phone { get; set; }
         public Metrics metrics { get; set; }
         public DateTime indexedAt { get; set; }
-        public List<string> tech { get; set; }
-        public List<string> techCategories { get; set; }
+        public string[] tech { get; set; }
+        public string[] techCategories { get; set; }
         public Parent parent { get; set; }
         public UltimateParent ultimateParent { get; set; }
     }

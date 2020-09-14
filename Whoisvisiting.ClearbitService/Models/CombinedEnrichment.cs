@@ -10,8 +10,8 @@ namespace Whoisvisiting.ClearbitService.Models
 
     public class Site
     {
-        public List<string> phoneNumbers { get; set; }
-        public List<string> emailAddresses { get; set; }
+        public string[] phoneNumbers { get; set; }
+        public string[] emailAddresses { get; set; }
     }
 
     public class Geo
@@ -25,8 +25,8 @@ namespace Whoisvisiting.ClearbitService.Models
         public string stateCode { get; set; }
         public string country { get; set; }
         public string countryCode { get; set; }
-        public double lat { get; set; }
-        public double lng { get; set; }
+        //public double lat { get; set; } = 0.0;
+        //public double lng { get; set; } = 0.0;
     }
 
     public class Facebook
@@ -45,8 +45,8 @@ namespace Whoisvisiting.ClearbitService.Models
         public string handle { get; set; }
         public string id { get; set; }
         public string bio { get; set; }
-        public string followers { get; set; }
-        public string following { get; set; }
+        //public int followers { get; set; } = 0;
+        //public int following { get; set; } = 0;
         public string location { get; set; }
         public string site { get; set; }
         public string avatar { get; set; }
@@ -64,15 +64,15 @@ namespace Whoisvisiting.ClearbitService.Models
 
     public class Metrics
     {
-        public object alexaUsRank { get; set; }
-        public int alexaGlobalRank { get; set; }
-        public string employees { get; set; }
+        //public long alexaUsRank { get; set; } = 0;
+        //public long alexaGlobalRank { get; set; } = 0;
+        //public int employees { get; set; } = 0;
         public string employeesRange { get; set; }
-        public string marketCap { get; set; }
-        public string raised { get; set; }
-        public string annualRevenue { get; set; }
+        //public long marketCap { get; set; } = 0;
+        //public long raised { get; set; } = 0;
+        //public long annualRevenue { get; set; } = 0;
         public string estimatedAnnualRevenue { get; set; }
-        public string fiscalYearEnd { get; set; }
+        //public int fiscalYearEnd { get; set; } = 0;
     }
 
     public class Parent
